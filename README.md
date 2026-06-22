@@ -37,6 +37,23 @@ O FinControl nasce da necessidade de organizar finanças pessoais de forma simpl
 
 ---
 
+
+## Stack tecnológica
+
+| Camada | Tecnologia | Versão |
+| ------ | ---------- | ------ |
+| Runtime | Node.js | 18+ recomendado |
+| HTTP | Express | 4.x |
+| Views | Mustache + mustache-express | 1.3.x |
+| ORM | Sequelize | 6.37.x |
+| Banco | SQLite (driver `sqlite3`) | 6.x |
+| Sessão | express-session | 1.x |
+| Segurança | bcryptjs | 2.4.x |
+| UI | Bootstrap | 5.3.x |
+| Ícones | Boxicons | 2.1.x |
+
+---
+
 ## Problema e solução
 
 **Problema:** muitas pessoas não têm visibilidade clara de quanto entra, quanto sai e qual é o saldo disponível ao longo do mês.
@@ -159,22 +176,6 @@ Fluxo típico de uma requisição autenticada:
 3. `DashboardController` chama `DashboardService`.
 4. O service consulta transações e categorias no SQLite e calcula saldo.
 5. O controller passa os dados pelo `viewHelper` e renderiza `dashboard/index.mustache`.
-
----
-
-## Stack tecnológica
-
-| Camada | Tecnologia | Versão |
-| ------ | ---------- | ------ |
-| Runtime | Node.js | 18+ recomendado |
-| HTTP | Express | 4.x |
-| Views | Mustache + mustache-express | 1.3.x |
-| ORM | Sequelize | 6.37.x |
-| Banco | SQLite (driver `sqlite3`) | 6.x |
-| Sessão | express-session | 1.x |
-| Segurança | bcryptjs | 2.4.x |
-| UI | Bootstrap | 5.3.x |
-| Ícones | Boxicons | 2.1.x |
 
 ---
 
